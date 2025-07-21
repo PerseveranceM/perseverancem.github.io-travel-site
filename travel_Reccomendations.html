@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Welcome to WanderWise</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        padding: 10px 20px;
+        color: white;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 15px;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+
+      .search-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-container input[type="text"] {
+        padding: 5px;
+        margin-right: 5px;
+      }
+
+      .search-container button {
+        padding: 5px 10px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+
+      .intro-section {
+        padding: 90px 20px;
+        background-size: cover;
+        background-position: center;
+        color: #111111;
+        text-align: center;
+        background-image: url("./images/pouch-map-toy-airplane-blue-background-with-space-writing-text.jpg");
+      }
+
+      .intro-section h1 {
+        font-size: 5em;
+        margin-bottom: 20px;
+      }
+
+      .intro-section p {
+        font-size: 1.2em;
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search recommendations..."
+        />
+        <button onclick="executeSearch()">Search</button>
+        <button onclick="resetSearch()">Reset</button>
+      </div>
+    </div>
+
+    <div class="intro-section">
+      <h1>
+        Welcome <br />to <br />
+        WanderWise
+      </h1>
+      <p>
+        Your ultimate travel companion! Whether you're dreaming of sandy
+        beaches, snowy mountains, vibrant cities, or serene countryside,
+        WanderWise is here to help you plan the perfect getaway. Explore expert
+        recommendations, discover hidden gems, and let your next adventure begin
+        with us.
+      </p>
+    </div>
+    <div id="travel-container" style="padding: 20px"></div>
+    <script src="./travel_Reccomendations.js"></script>
+  </body>
+</html>
